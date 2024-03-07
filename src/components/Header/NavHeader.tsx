@@ -1,11 +1,15 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react"
-import { LANDING_PARAGRAPH_FONT, RESPONSIVE_BUTTON_ICON_SIZE } from "../../constants/appConstants"
+import { LANDING_PARAGRAPH_FONT } from "../../constants/appConstants"
 import { BsInstagram, BsTiktok } from "react-icons/bs"
 import { COLORS } from "../../constants/colors"
 import { FaFacebook } from "react-icons/fa"
+import { LargeBtn } from "../LargeBtn"
 
 
 export const NavHeader = () => {
+  const handleSubmit = () => {
+    // navigate(UNAUTHENTICATED_ROUTES.login);
+  };
   return (
     <>
       <Flex
@@ -24,11 +28,11 @@ export const NavHeader = () => {
           <Text>LOGO</Text>
         </Box>
         <Flex
-          justifyContent={'space-around'}
+          justifyContent={'space-between'}
         >
           <Flex
             flexDirection={['column', 'column', 'row']}
-            justifyContent={'space-between'}
+            justify={'space-between'}
             gap={'1rem'}
           >
             <Link fontSize={LANDING_PARAGRAPH_FONT}>Home</Link>
@@ -41,11 +45,31 @@ export const NavHeader = () => {
             <Link fontSize={LANDING_PARAGRAPH_FONT}>Merch</Link>
             <Link fontSize={LANDING_PARAGRAPH_FONT}>About</Link>
           </Flex>
-          <Flex>
+          <Flex justify={'space-between'} alignItems={'center'} gap={'.5rem'}>
             <BsTiktok color={COLORS.instagramBlue} />
             <BsInstagram color={COLORS.instagramBlue} />
             <FaFacebook color={COLORS.facebookBlue} />
           </Flex>
+        </Flex>
+        <Flex>
+          <Box width={['7.5rem', '12rem', '15rem']}>
+            <LargeBtn
+              bg={''}
+              color={COLORS.black}
+              text={'JOIN NOW'}
+              loading={false}
+              handleSubmit={handleSubmit}
+            />
+          </Box>
+          <Box width={['7.5rem', '12rem', '15rem']}>
+            <LargeBtn
+              bg={''}
+              color={COLORS.black}
+              text={'FREE PASS'}
+              loading={false}
+              handleSubmit={handleSubmit}
+            />
+          </Box>
         </Flex>
       </Flex>
     </>

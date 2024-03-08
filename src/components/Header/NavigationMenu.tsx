@@ -20,22 +20,16 @@ const NavigationMenu = (): JSX.Element => {
       fontSize="1.6rem"
       shadow="md"
     >
-      <Divider />
-      <CustomLink route="#" text="Feature" />
-      <Divider />
-      <CustomLink route="#" text="How It Works" />
-      <Divider />
-      <CustomLink route="#" text="FAQs" />
-      <Divider />
-      <Box width="20rem">
-        <LargeBtn
-          text="Get Started"
-          color={COLORS.black}
-          bg={COLORS.yellow}
-          loading={false}
-          h={['4rem']}
-        />
-      </Box>
+      <CustomLink route="#" text="Home" />
+      <CustomLink route="#" text="Training" />
+      <CustomLink route="#" text="Facilities" />
+      <CustomLink route="#" text="Amenities" />
+      <CustomLink route="#" text="Join" />
+      <CustomLink route="#" text="Blog" />
+      <CustomLink route="#" text="Gallery" />
+      <CustomLink route="#" text="Merch" />
+      <CustomLink route="#" text="About" />
+
     </Flex>
   );
 };

@@ -1,4 +1,5 @@
 
+import { CouponSection } from './components/CouponSection'
 import {NavHeader} from './components/Header/NavHeader'
 import { VideoSection } from './components/VideoSection'
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <NavHeader />
       <VideoSection />
+      {/* <CouponSection /> */}
     </>
   )
 }

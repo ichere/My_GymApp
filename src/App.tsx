@@ -2,6 +2,7 @@
 import { CouponSection } from './components/CouponSection'
 import {NavHeader} from './components/Header/NavHeader'
 import { VideoSection } from './components/VideoSection'
+import { WhySection } from './components/WhySection'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <>
       <NavHeader />
       <VideoSection />
-      {/* <CouponSection /> */}
+      <CouponSection />
+      <WhySection />
     </>
   )
 }

@@ -1,6 +1,8 @@
-import { Box, Flex, Heading, Img, Text } from '@chakra-ui/react'
+import { Box, Flex, Img, Text } from '@chakra-ui/react'
 import backgroundImage from './../assets/images/backgroundImg.webp'
 import gymPic from './../assets/images/gym2.webp'
+import gymExp from './../assets/images/gymExperience.webp'
+import checkImg from './../assets/images/check (1).webp'
 import { COLORS } from '../constants/colors'
 
 export const WhySection = () => {
@@ -12,24 +14,90 @@ export const WhySection = () => {
             alignItems={'center'}
             justify={['space-between']}
         >
-            <Box maxW={['100%', '50rem']} position="relative" textAlign={['center', 'center', 'left']}>
-                <Flex
-                    background={'rgba(0, 0, 0, 0.5)'}
-                    position={'absolute'}
+            <Box w={['100%', '45%', '100%']} display={['block', 'block', 'block']}>
+                <Img src={gymExp} width={['80%']} height={['50%']} alt="gym user" /> 
+                <Flex 
+                    align={'center'}
+                    gap={'2rem'}
                 >
-                    <Heading
-                        as="h6"
-                        marginBottom={'2rem'}
-                        fontSize={['1.8rem', '1.8rem', '5.2rem']}
-                        fontWeight={400}
-                        maxW={['20rem', '25rem', '100%']}
-                        transform={['translate(30%)', 'translate(40%)', 'translate(0%)']}
-                        color={COLORS.green}
-                        textAlign={['left']}
-                    >WHY</Heading>
+                    <Box>
+                        <Img src={checkImg} />
+                    </Box>
+                    <Text
+                        color={COLORS.white}
+                        position={'relative'}
+                        fontWeight={500}
+                        fontSize={['1.2rem', '1.2rem', '2.6rem']}
+                        lineHeight={'1.6rem'}
+                        marginTop={'1.6rem'}
+                    >Super Clean</Text>
+                </Flex>
+                <Flex 
+                    align={'center'}
+                    gap={'2rem'}
+                >
+                    <Box>
+                        <Img src={checkImg} />
+                    </Box>
+                    <Text
+                        color={COLORS.white}
+                        position={'relative'}
+                        fontWeight={500}
+                        fontSize={['1.2rem', '1.2rem', '2.6rem']}
+                        lineHeight={'1.6rem'}
+                        marginTop={'1.6rem'}
+                    >Friendly Staff</Text>
+                </Flex>
+                <Flex 
+                    align={'center'}
+                    gap={'2rem'}
+                >
+                    <Box>
+                        <Img src={checkImg} />
+                    </Box>
+                    <Text
+                        color={COLORS.white}
+                        position={'relative'}
+                        fontWeight={500}
+                        fontSize={['1.2rem', '1.2rem', '2.6rem']}
+                        lineHeight={'1.6rem'}
+                        marginTop={'1.6rem'}
+                    >Workout & Recover</Text>
+                </Flex>
+                <Flex 
+                    align={'center'}
+                    gap={'2rem'}
+                >
+                    <Box>
+                        <Img src={checkImg} />
+                    </Box>
+                    <Text
+                        color={COLORS.white}
+                        position={'relative'}
+                        fontWeight={500}
+                        fontSize={['1.2rem', '1.2rem', '2.6rem']}
+                        lineHeight={'1.6rem'}
+                        marginTop={'1.6rem'}
+                    >Motivating Atmosphere</Text>
+                </Flex>
+                <Flex 
+                    align={'center'}
+                    gap={'2rem'}
+                >
+                    <Box>
+                        <Img src={checkImg} />
+                    </Box>
+                    <Text
+                        color={COLORS.white}
+                        position={'relative'}
+                        fontWeight={500}
+                        fontSize={['1.2rem', '1.2rem', '2.6rem']}
+                        lineHeight={'1.6rem'}
+                        marginTop={'1.6rem'}
+                    >Best Equipment</Text>
                 </Flex>
             </Box>
-            <Box w={['100%', '45%', '50%']} display={['block', 'block', 'block']}>
+            <Box w={['100%', '45%', '70%']} display={['block', 'block', 'block']}>
              <Img src={gymPic} width={['70%']} height={['70%']} alt="gym user" />
             </Box>
         </Flex>

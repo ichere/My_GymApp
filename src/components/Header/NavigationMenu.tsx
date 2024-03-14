@@ -1,9 +1,9 @@
-import { Box, Divider, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import { COLORS } from '../../constants/colors';
 
 import CustomLink from '../CustomLink';
-import { LargeBtn } from '../LargeBtn';
+
 
 const NavigationMenu = (): JSX.Element => {
   return (

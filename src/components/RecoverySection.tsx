@@ -1,9 +1,8 @@
-import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react"
-import experiencePic from './../assets/images/Experience.webp'
-import { COLORS } from "../constants/colors"
+import { Box, Flex, Heading, Img, Text } from '@chakra-ui/react'
+import recoveryPic from './../assets/images/recovery.webp'
+import { COLORS } from '../constants/colors'
 
-
-export const ExperienceSection = () => {
+export const RecoverySection = () => {
   return (
     <Box padding={['2rem', '3rem', '0rem 5rem']} data-aos="fade-up" mt={['4rem', '4rem', '8rem']}>
        <Flex
@@ -12,20 +11,28 @@ export const ExperienceSection = () => {
             alignItems={'center'}
             justify={['space-between']}
        >
-            <Box w={['100%', '45%', '50%']} display={['block', 'block', 'block']}>
-                <Img src={experiencePic} width={['90%']} height={['70%']} alt="gym user" />
-            </Box>
-            <Box maxW={['100%', '50rem']} position="relative" textAlign={['center', 'center', 'center']}>
+            <Box maxW={['100%', '50rem']} mb={['3rem', '2.5rem', '5rem']} position="relative" textAlign={['center', 'center', 'center']}>
                 <Heading
                     as="h6"
-                    fontSize={['1.8rem', '1.8rem', '5.2rem']}
-                    fontWeight={600}
+                    fontSize={['1.8rem', '1.8rem', '6.2rem']}
+                    fontWeight={700}
                     maxW={['20rem', '25rem', '100%']}
                     transform={['translate(30%)', 'translate(40%)', 'translate(0%)']}
                     color={COLORS.black}
                     textAlign={['left']}
                 >
-                    The Experience
+                    THE. BEST.
+                </Heading>
+                <Heading
+                    as="h6"
+                    fontSize={['1.8rem', '1.8rem', '6.2rem']}
+                    fontWeight={700}
+                    maxW={['20rem', '25rem', '100%']}
+                    transform={['translate(30%)', 'translate(40%)', 'translate(0%)']}
+                    color={COLORS.black}
+                    textAlign={['left']}
+                >
+                    RECOVERY.
                 </Heading>
                 <Text
                     color={COLORS.black}
@@ -36,6 +43,9 @@ export const ExperienceSection = () => {
                 >
                  Cleanliness & Friendliness, Guaranteed. Fitness nGo carries the latest and greatest cardio and strength training equipment available, exciting nGo classes, Personal Training, Tanning, Cryo-Therapy, Hydromassage, Kids Club, and the greatest atmosphere in the city.
                 </Text>
+            </Box>
+            <Box w={['100%', '45%', '50%']} display={['block', 'block', 'block']}>
+                <Img src={recoveryPic} width={['90%']} height={['70%']} alt="gym user" />
             </Box>
         </Flex> 
     </Box>

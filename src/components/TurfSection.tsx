@@ -1,9 +1,10 @@
 import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react"
-import experiencePic from './../assets/images/Experience.webp'
 import { COLORS } from "../constants/colors"
+import turfPic1 from './../assets/images/turf1.webp'
+import turfPic2 from './../assets/images/turrf.webp'
 
 
-export const ExperienceSection = () => {
+export const TurfSection = () => {
   return (
     <Box padding={['2rem', '3rem', '0rem 5rem']} data-aos="fade-up" mt={['4rem', '4rem', '8rem']}>
        <Flex
@@ -12,9 +13,10 @@ export const ExperienceSection = () => {
             alignItems={'center'}
             justify={['space-between']}
        >
-            <Box w={['100%', '45%', '50%']} display={['block', 'block', 'block']}>
-                <Img src={experiencePic} width={['90%']} height={['70%']} alt="gym user" />
-            </Box>
+            <Flex w={['100%', '45%', '50%']} >
+                <Img src={turfPic1} width={['45%']} height={['50%']} alt="gym user" />
+                <Img src={turfPic2} width={['', '', '45%']} height={['', '', '50%']} mt={['', '', '10rem']} alt="gym user" />
+            </Flex>
             <Box maxW={['100%', '50rem']} position="relative" textAlign={['center', 'center', 'center']}>
                 <Heading
                     as="h6"
@@ -25,7 +27,7 @@ export const ExperienceSection = () => {
                     color={COLORS.black}
                     textAlign={['left']}
                 >
-                    The Experience
+                    TURF ZONE
                 </Heading>
                 <Text
                     color={COLORS.black}
@@ -34,7 +36,7 @@ export const ExperienceSection = () => {
                     marginTop={'1.6rem'}
                     align={'left'}
                 >
-                 Cleanliness & Friendliness, Guaranteed. Fitness nGo carries the latest and greatest cardio and strength training equipment available, exciting nGo classes, Personal Training, Tanning, Cryo-Therapy, Hydromassage, Kids Club, and the greatest atmosphere in the city.
+                   The perfect place to knock out those athletic workouts, take content, and use the TANK.
                 </Text>
             </Box>
         </Flex> 

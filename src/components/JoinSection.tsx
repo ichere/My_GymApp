@@ -6,7 +6,7 @@ import { COLORS } from "../constants/colors"
 
 export const JoinSection = () => {
   return (
-    <Box padding={['2rem', '3rem', '0rem 5rem']} backgroundImage={backgroundImage} data-aos="fade-up" mt={['4rem', '4rem', '8rem']}>
+    <Box padding={['2rem', '3rem', '0rem 5rem']} backgroundImage={backgroundImage} backgroundRepeat={'no-repeat'} data-aos="fade-up" mt={['4rem', '4rem', '8rem']}>
         <Text
             color={COLORS.white}
             fontSize={['12rem']}

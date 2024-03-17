@@ -15,7 +15,7 @@ export const TurfSection = () => {
        >
             <Flex w={['100%', '45%', '50%']} >
                 <Img src={turfPic1} width={['45%']} height={['50%']} alt="gym user" />
-                <Img src={turfPic2} width={['', '', '45%']} height={['', '', '50%']} mt={['', '', '10rem']} alt="gym user" />
+                <Img src={turfPic2} width={['45%']} height={['', '', '50%']} mt={['10rem']} display={['none', 'none', 'block']} alt="gym user" />
             </Flex>
             <Box maxW={['100%', '50rem']} position="relative" textAlign={['center', 'center', 'center']}>
                 <Heading

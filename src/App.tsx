@@ -2,6 +2,7 @@
 import { AtmosphereSection } from './components/AtmosphereSection'
 import { CouponSection } from './components/CouponSection'
 import { ExperienceSection } from './components/ExperienceSection'
+import { FooterSection } from './components/FooterSection'
 import {NavHeader} from './components/Header/NavHeader'
 import { JoinSection } from './components/JoinSection'
 import { MapSection } from './components/MapSection'
@@ -24,6 +25,7 @@ function App() {
       <AtmosphereSection />
       <JoinSection />
       <MapSection />
+      <FooterSection />
     </>
   )
 }

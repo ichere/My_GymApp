@@ -242,3 +242,12 @@ h6 {
   cursor: pointer;
   text-transform: capitalize;
 }
+.video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
